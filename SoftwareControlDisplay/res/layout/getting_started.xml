@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getting_started"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lay_numberPad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:weightSum="1.0" >
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/numberpad" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay_accessDenied"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@drawable/access_denied"
+        android:weightSum="1.0" />
+    
+</FrameLayout>

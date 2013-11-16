@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SoftwareControlDisplay</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_message">No Ineternet Connection. \n Please Do Network Setting.</string>
+    <string name="cd_internet_content"> scheduled content change by hour or day \ncontent management (digital slideshow, streaming video, HTML pages) \nactivity logs(walking traffic from camera and content change) \naccess to marketplace buy or sell advertisement</string>
+    <string name="btn_create_acount">We recommend you use a new clean DropBox folder</string>
+    <string name="button0">0</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+</resources>

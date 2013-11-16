@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Active btn button_bg_selected -->
+    <item android:drawable="@drawable/custom_button_selected" android:state_focused="false" android:state_pressed="false" android:state_selected="true"/>
+    <!-- Inactive btn -->
+    <item android:drawable="@drawable/custom_button_unselected" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <!-- Pressed btn -->
+    <item android:drawable="@drawable/custom_button_selected" android:state_pressed="true"/>
+    <!-- Selected btn (using d-pad) -->
+    <item android:drawable="@drawable/custom_button_selected" android:state_focused="true" android:state_pressed="false" android:state_selected="true"/>
+
+</selector>
