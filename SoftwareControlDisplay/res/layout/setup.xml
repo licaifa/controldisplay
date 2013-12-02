@@ -5,129 +5,132 @@
     android:background="@drawable/bg"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8"
-        android:orientation="horizontal" >
+        android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.07" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.88"
-            android:orientation="vertical" >
-			<LinearLayout android:layout_width="match_parent"
-			    android:layout_height="0dp"
-			    android:layout_weight="0.06"/>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.18">
-				<LinearLayout android:layout_width="wrap_content"
-				    android:orientation="horizontal"
-				    android:gravity="center_vertical"
-				    android:layout_alignParentLeft="true"
-				    android:layout_height="match_parent">
-				    <ImageView android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:layout_marginTop="8dp"
-				        android:layout_marginBottom="8dp"
-				        android:scaleType="centerInside"
-				        android:src="@drawable/mark"/>
-				    <TextView android:layout_width="wrap_content"
-				        android:layout_height="wrap_content"
-				        android:gravity="center_vertical"
-				        android:layout_marginLeft="2dp"
-				        android:textAppearance="?android:attr/textAppearanceLarge"
-				        android:text="Control Display Setup"
-				        android:textStyle="bold"/>
-				</LinearLayout>
-                <LinearLayout
-                    android:layout_alignParentRight="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="5dp"
-                    android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.07" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.88"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical" >
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/mark" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="center_vertical"
+                            android:text="Control Display Setup"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:layout_weight="1" >
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="License key"
+                                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/upgradeBtn"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:text="UPGRADE $4.99" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:gravity="center"
-                                android:text="License key"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:text="free version(watermark)"
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1" />
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:orientation="vertical" >
-
-                        <Button
-                            android:id="@+id/upgradeBtn"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="UPGRADE $4.99" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_gravity="center_horizontal"
-                            android:text="free version(watermark)"
-                            android:textAppearance="?android:attr/textAppearanceSmall" />
-                    </LinearLayout>
-                </LinearLayout>
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.76" >
+                </RelativeLayout>
 
                 <LinearLayout
-                    android:id="@+id/radioGp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
-                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
                     android:orientation="vertical" >
 
                     <RadioButton
                         android:id="@+id/cd_internet_radio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
                         android:button="@drawable/radiobutton_selector"
+                        android:checked="true"
                         android:text="Control display from Internet which includes:"
                         android:textAppearance="?android:attr/textAppearanceSmall" >
-                        
-                    <requestFocus />
+
+                        <requestFocus android:layout_width="match_parent" />
+
                     </RadioButton>
 
                     <TextView
@@ -136,6 +139,71 @@
                         android:layout_marginLeft="50dp"
                         android:text="@string/cd_internet_content"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/ctrl_url_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radiobutton_selector"
+                        android:text="Custom Website URL"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/urlEditTxt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:ems="10"
+                            android:inputType="textUri"
+                            android:tag="210"
+                            android:text="http://" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7" >
+
+                            <EditText
+                                android:id="@+id/refreshSecondsEditTxt"
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:maxLength="4"
+                                android:tag="220" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:gravity="center_vertical"
+                                android:text="Refresh seconds"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
 
                     <RadioButton
                         android:id="@+id/sync_dropbox_radio"
@@ -145,157 +213,182 @@
                         android:text="Sync content from Dropbox account"
                         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:orientation="vertical" >
 
-                        <RadioButton
-                            android:id="@+id/ctrl_url_radio"
-                            android:button="@drawable/radiobutton_selector"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentLeft="true"
-                            android:layout_centerVertical="true"
-                            android:text="Custom Website URL"
-                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/dropAccountEdit"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:inputType="textEmailAddress" >
+                            </EditText>
+
+                            <Button
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.4" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.3" >
+
+                                <TextView
+                                    android:id="@+id/signStateTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:textStyle="bold"
+                                    android:text="SUCCESS"
+                                    android:gravity="center_vertical"
+                                    android:visibility="invisible"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <EditText
+                                android:id="@+id/dropPasswdEdit"
+                                android:layout_width="0dp"
+                                android:hint="*********"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:inputType="textPassword" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.4" >
+
+                                <CheckBox
+                                    android:layout_width="wrap_content"
+                                    android:button="@drawable/checkbox_selector"
+                                    android:layout_height="wrap_content"
+                                    android:text="upload sample data" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="0.3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:text="Security Settings"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" >
 
                         <EditText
-                            android:id="@+id/urlEditTxt"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/passwdEditTxt"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:layout_toRightOf="@+id/ctrl_url_radio"
+                            android:layout_toRightOf="@+id/textView1"
+                            android:layout_weight="0.3"
+                            android:hint="*****"
                             android:ems="10"
-                            android:tag="210"
-                            android:inputType="textUri"
-                            android:text="http://" />
-
-                        <EditText
-                            android:id="@+id/refreshSecondsEditTxt"
-                            android:layout_width="45dp"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@+id/urlEditTxt"
-                            android:layout_marginLeft="15dp"
-                            android:ems="10"
-                            android:tag="220"
+                            android:gravity="center_vertical"
                             android:inputType="numberDecimal"
-                            android:maxLength="4" />
+                            android:maxLength="10"
+                            android:tag="230" >
+                        </EditText>
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginLeft="6dp"
-                            android:layout_toRightOf="@+id/refreshSecondsEditTxt"
-                            android:text="Refresh seconds"
-                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                            android:layout_weight="0.4" >
 
-                        <Button
-                            android:id="@+id/nextBtn"
-                            android:layout_width="wrap_content"
+                            <EditText
+                                android:id="@+id/touchSecondsEditTxt"
+                                android:layout_width="45dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:ems="10"
+                                android:inputType="numberDecimal"
+                                android:maxLength="2"
+                                android:tag="240" >
+                            </EditText>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:gravity="center_vertical"
+                                android:text="Touch seconds"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:text="NEXT" />
-                    </RelativeLayout>
+                            android:gravity="right"
+                            android:layout_weight="0.3" >
+
+                            <Button
+                                android:id="@+id/updateBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UPDATE" />
+
+                            <Button
+                                android:id="@+id/nextBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_height="wrap_content"
+                                android:text="NEXT" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.05" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.2"
-        android:background="#ff0000"
-        android:orientation="horizontal" >
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.1" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.85"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:text="Security Settings"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="35dp"
-                    android:text="numeric password"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                <EditText
-                    android:id="@+id/passwdEditTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="16dp"
-                    android:layout_toRightOf="@+id/textView1"
-                    android:ems="10"
-                    android:tag="230"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/setup_pass"
-                    android:inputType="numberDecimal"
-                    android:maxLength="10" >
-                </EditText>
-
-                <Button
-                    android:id="@+id/updateBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="UPDATE" />
-
-                <EditText
-                    android:id="@+id/touchSecondsEditTxt"
-                    android:layout_width="45dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_toRightOf="@+id/passwdEditTxt"
-                    android:ems="10"
-                    android:tag="240"
-                    android:inputType="numberDecimal"
-                    android:maxLength="2" >
-                </EditText>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="6dp"
-                    android:layout_toRightOf="@+id/touchSecondsEditTxt"
-                    android:text="Touch seconds"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.05" />
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

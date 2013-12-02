@@ -21,6 +21,8 @@ public class DropBoxScene extends Activity implements OnClickListener{
 
 	private int mScreenW, mScreenH;
 	private static String PASSWD = "00000";
+	private static String APP_KEY = "irh4u8krse8t0v1";
+	private static String APP_SECRET = "w8lij9ak215lon2";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

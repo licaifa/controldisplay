@@ -59,14 +59,11 @@ public class GettingStartedScene extends Activity implements android.view.Gestur
 		userInput.setHeight((int)(mScreenH * 0.1));
 		
 		userInput.addTextChangedListener(new TextWatcher() {
-			
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
 			}
-			
 			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count,
-					int after) {
+			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 			}
 			
 			@Override
